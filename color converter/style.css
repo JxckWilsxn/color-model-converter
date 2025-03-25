@@ -1,16 +1,38 @@
+* {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    color: #e0dde296;
+}
+
 body {
     background-color: #ffffff;
     text-align: center;
     margin: 0 auto;
     margin: 150px;
     overflow: hidden;
+    background-image: linear-gradient(to right, rgb(12, 77, 59) , rgb(30, 59, 45));
+}
+
+#heading {
+    text-transform: uppercase;
+    color: #e0dde296;
 }
 
 #RGB-HEX {
     border: none;
     background: none;
-    font-size: 24px;
-    margin-bottom: 125px;
+    font-size: 14px;
+    margin-bottom: 10px;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    padding: 10px;
+    color: #a6a5a7;
+}
+
+#RGB-HEX option {
+    color: #a6a5a7;
 }
 
 .inputValues {
@@ -24,7 +46,7 @@ body {
     border-top: none;
     border-left: none;
     border-right: none;
-    border-bottom-color: #890cc7;
+    border-bottom-color: #e0dde296;
     width: 90px;
     font-size: 54px;
     text-align: center;
@@ -35,16 +57,14 @@ body {
 }
 
 ::placeholder, #dash {
-    color: #e0dde2;
+    color: #e0dde296
 }
 
 .buttons {
     padding: 10px;
 }
 
-#convertBtn {
-    background-color: #890cc7;
-    color: #ffffff;
+#convertBtn, #resetBtn {
     padding: 8px;
     border: none;
     margin-top: 10px;
@@ -52,23 +72,24 @@ body {
     border-radius: 5px;
 }
 
+#convertBtn {
+    background-color: #e0dde296;
+    color: #ffffff;
+}
+
 #resetBtn {
     background-color: #ffffff;
-    color: #890cc7;
-    outline: #890cc7 solid 1.5px;
-    padding: 8px;
-    border: none;
-    margin-top: 10px;
-    cursor: pointer;
-    border-radius: 5px;
-    width: 61px;
+    color: #a6a5a7;
+    outline: #e0dde296 solid 1.5px;
+    width: 70px;
 }
 
 #colorBar {
     width: 500px;
     margin: 5px 0;
     height: 85px;
-    border: #890cc7 solid 2px;
+    border: #e0dde296 solid 4px;
+    outline: 10px;
     margin: 10px auto;
     border-radius: 5px;
 }
